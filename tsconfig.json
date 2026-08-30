@@ -10,7 +10,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "moduleResolution": "node",
     "declaration": false,
     "sourceMap": true,
     "noImplicitAny": true,
@@ -20,21 +19,17 @@
     "noFallthroughCasesInSwitch": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    },
     "typeRoots": ["./node_modules/@types"]
   },
   "include": [
     "src/**/*.ts",
-    "src/**/*.d.ts",
-    "scripts/**/*.ts",
-    "tests/**/*.ts"
+    "src/**/*.d.ts"
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "tests",
+    "scripts"
   ],
   "ts-node": {
     "files": true
